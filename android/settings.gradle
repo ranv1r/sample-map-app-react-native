@@ -1,0 +1,19 @@
+rootProject.name = 'AwesomeProject'
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
+include ':react-native-android-immersive-mode'
+project(':react-native-android-immersive-mode').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-immersive-mode/android')
+include ':react-native-immersive-mode'
+project(':react-native-immersive-mode').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-immersive-mode/android')
+include ':react-native-immersive'
+project(':react-native-immersive').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-immersive/android')
+include ':react-native-full-screen'
+project(':react-native-full-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-full-screen/android')
+include ':react-native-full-screen'
+project(':react-native-full-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-full-screen/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
